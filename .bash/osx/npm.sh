@@ -10,12 +10,15 @@
 # shellcheck source=/dev/null
 . ".bash/incl/all.sh"
 
-_jvcl_::update_npm() {
+_jvcl_::npm_update() {
   _jvcl_::h1 "Update Node.js packages..."
   npm install npm@latest --verbose
   npm update --save --verbose
   npm list --omit=dev
   npm list
+}
+
+_jvcl_::npm_audit() {
   _jvcl_::h1 "Npm audit..."
   npm audit || :
   npx depcheck --detailed || :
@@ -88,7 +91,8 @@ _jvcl_::update_assets() {
 }
 
 if _jvcl_::brew_install_formula "node"; then
-  _jvcl_::update_npm
+  _jvcl_::npm_update
+  _jvcl_::npm_audit
   _jvcl_::_sass_update
   _jvcl_::_sass_rougify
   _jvcl_::update_assets

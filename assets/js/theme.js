@@ -181,6 +181,7 @@ function restore() {
 
 function highlight() {
   let text = new URL(location.href).searchParams.get("highlight");
+  text = DOMPurify.sanitize(text);
 
   if (text) {
     $(".markdown-body")

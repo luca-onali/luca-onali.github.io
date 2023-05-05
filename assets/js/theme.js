@@ -180,8 +180,8 @@ function restore() {
 }
 
 function highlight() {
-  let text = new URL(location.href).searchParams.get("highlight");
-  text = DOMPurify.sanitize(text);
+  const _sanitizeUrl = DOMPurify.sanitize(location.href);
+  let text = new URL(_sanitizeUrl).searchParams.get("highlight");
 
   if (text) {
     $(".markdown-body")

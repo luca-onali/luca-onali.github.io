@@ -27,6 +27,9 @@ plugins:
   - jekyll-mentions
 
 exclude:
+  - .bash
+  - .github
+  - .vscode
   - .yarn
   - CNAME
   - Gemfile

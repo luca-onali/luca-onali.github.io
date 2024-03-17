@@ -19,9 +19,9 @@ gem "jekyll", "~> 3.9.5"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-feed", "~> 0.17.0"
   gem "jekyll-avatar", "~> 0.8.0"
-  gem "jekyll-mentions", "~> 1.6"
+  gem "jekyll-mentions", "~> 1.6.0"
   gem "jemoji", "~> 0.13.0"
   gem "github-pages", "~> 231"
 end

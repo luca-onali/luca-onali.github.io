@@ -56,6 +56,6 @@
     "report": "lighthouse http://127.0.0.1:4000",
     "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && ( npx depcheck --detailed ) || : && yarn upgrade-interactive"
   },
-  "version": "2.2",
+  "version": "2.3",
   "packageManager": "yarn@4.1.1"
 }

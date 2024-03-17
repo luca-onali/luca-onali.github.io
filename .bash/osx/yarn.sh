@@ -45,7 +45,7 @@ _jvcl_::update_assets() {
   local _asset _dest _pkg
 
   for _asset in "dompurify" "jquery"; do
-    cp -pvf "node_modules/${_asset}/dist/"*.min.js "assets/lib/"
+    cp -pvf "./node_modules/${_asset}/dist/"*.min.js* "./assets/lib/"
   done
 
   for _asset in "lato-font/fonts/lato-bold" \
@@ -57,12 +57,12 @@ _jvcl_::update_assets() {
 
     _pkg="${_asset%%/*}"
     # _dest="assets/fonts/${_pkg}@$(npm info "${_pkg}" version)"
-    _dest="assets/fonts/${_pkg}"
+    _dest="./assets/fonts/${_pkg}"
 
     mkdir -pv "${_dest}"
-    cp -pvrf "node_modules/${_asset}/"*.{woff,woff2} "${_dest}"
+    cp -pvrf "./node_modules/${_asset}/"*.{woff,woff2} "${_dest}"
     if [ "${_pkg}" == "font-awesome" ]; then
-      cp -pvrf "node_modules/${_asset}/"*.{eot,svg,ttf} "${_dest}"
+      cp -pvrf "./node_modules/${_asset}/"*.{eot,svg,ttf} "${_dest}"
     fi
   done
 }

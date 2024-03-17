@@ -27,9 +27,11 @@ plugins:
   - jekyll-mentions
 
 exclude:
+  - .yarn
   - CNAME
   - Gemfile
   - Gemfile.lock
+  - jekyll-theme-read-the-docs.gemspec
   - LICENSE
   - Makefile
   - node_modules
@@ -37,9 +39,10 @@ exclude:
   - package.json
   - Pipfile
   - Pipfile.lock
-  - jekyll-theme-read-the-docs.gemspec
   - requirements.txt
   - webpack.config.js
+  - yarn.lock
+
 
 # Dev
 # ------------------------------------------------------------------------------

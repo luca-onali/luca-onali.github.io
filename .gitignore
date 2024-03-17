@@ -30,3 +30,4 @@ action.changelog.md
 
 # custom
 .DS_Store
+.yarn

@@ -14,12 +14,11 @@ _jvcl_::pipenv_install() {
   find . -type f -name "Pipfile*" -print -delete
   pipenv --rm
   pipenv --clear # clear cache
-  pipenv install --verbose --dev -r ./requirements-dev.txt
   pipenv install --verbose -r ./requirements.txt
-  pipenv run pip freeze -r requirements.txt | grep -E "## The following requirements were added by pip freeze:" -B 100
+  pipenv run pip freeze -r ./requirements.txt | grep -E "## The following requirements were added by pip freeze:" -B 100
   echo
 }
 
 if _jvcl_::brew_install_formula "pipenv"; then
-  _jvcl_::pipenv_install
+  _jvcl_::pipenv_install || printf "ERROR"
 fi

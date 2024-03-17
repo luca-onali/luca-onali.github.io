@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-read-the-docs"
-  spec.version       = "2.1"
+  spec.version       = "2.3"
   spec.authors       = ["JV-conseil"]
   spec.email         = ["contact@jv-conseil.net"]
 

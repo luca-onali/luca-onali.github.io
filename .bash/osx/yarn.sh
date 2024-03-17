@@ -10,20 +10,6 @@
 # shellcheck source=/dev/null
 . ".bash/incl/all.sh"
 
-_jvcl_::npm_update() {
-  _jvcl_::h1 "Update Node.js packages..."
-  npm install npm@latest --verbose
-  npm update --save --verbose
-  npm list --omit=dev
-  npm list
-}
-
-_jvcl_::npm_audit() {
-  _jvcl_::h1 "Npm audit..."
-  npm audit || :
-  npx depcheck --detailed || :
-}
-
 _jvcl_::webpack() {
   npm run format
   if [ "${DEBUG}" -gt 2 ]; then
@@ -33,15 +19,10 @@ _jvcl_::webpack() {
   fi
 }
 
-_jvcl_::npm_package_version() {
-  # shellcheck disable=SC2317
-  npm info "${1%%/*}" version
-}
-
 _jvcl_::_sass_update() {
   local _asset _dest _pkg
 
-  rm -vrf _sass/lib && mkdir -pv _sass/lib
+  rm -vrf ./_sass/lib && mkdir -pv ./_sass/lib
 
   for _asset in "@primer/css/"{base,breadcrumb,buttons,forms,loaders,markdown,support,utilities} \
     "font-awesome/scss/"{_icons,_variables}.scss \
@@ -49,7 +30,7 @@ _jvcl_::_sass_update() {
     _pkg="${_asset%%/*}"
     # _dest="_sass/lib/${_pkg}@$(npm info "${_pkg/@primer/@primer/css}" version)"
     _dest="_sass/lib/${_pkg/@primer/@primer/css}"
-    mkdir -pv "${_dest}" && cp -pvrf "node_modules/${_asset}" "${_dest}"
+    mkdir -pv "${_dest}" && cp -pvrf "./node_modules/${_asset}" "${_dest}"
   done
 
 }
@@ -86,14 +67,16 @@ _jvcl_::update_assets() {
   done
 }
 
-if _jvcl_::brew_install_formula "node"; then
-  _jvcl_::npm_update
-  _jvcl_::npm_audit
+_jvcl_::yarn_update() {
+  _jvcl_::h1 "Update Dependencies..."
+  npm run yarn-update
   _jvcl_::_sass_update
   _jvcl_::_sass_rougify
   _jvcl_::update_assets
   _jvcl_::webpack
-fi
+}
+
+_jvcl_::yarn_update
 
 # depecated
 

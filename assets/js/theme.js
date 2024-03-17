@@ -68,8 +68,8 @@ function search(data) {
           `<p class="text-gray">${prefix}${slice(
             page.content,
             min,
-            max
-          )}${suffix}</p>`
+            max,
+          )}${suffix}</p>`,
         );
       }
       results.push(`<li class="border-top py-4">${result.join("")}</li>`);
@@ -79,7 +79,7 @@ function search(data) {
     const _sanitizeResults = DOMPurify.sanitize(results.join(""));
     $(".search-results .content").html(_sanitizeResults);
     $(".search-results .summary").html(
-      ui.i18n.search_results_found.replace("#", results.length)
+      ui.i18n.search_results_found.replace("#", results.length),
     );
   } else {
     $(".search-results .content").empty();
@@ -134,7 +134,7 @@ function toc() {
           } else {
             stack.splice(
               0,
-              Math.min(temp - tagLevel, Math.max(stack.length - 1, 0))
+              Math.min(temp - tagLevel, Math.max(stack.length - 1, 0)),
             );
           }
           temp = tagLevel;
@@ -207,7 +207,7 @@ function highlight() {
 }
 
 $(window).on("hashchange", () =>
-  initialize(location.hash || location.pathname)
+  initialize(location.hash || location.pathname),
 );
 
 $(document).on("scroll", function () {
@@ -293,11 +293,23 @@ if ("serviceWorker" in navigator) {
   debug("Service Worker not supported!");
 }
 
-/**
- * For single README.md in docs/
- */
 $(function () {
   /**
+   * Add target="'_blank" to all external links
+   */
+  $("a[href^='http']").each(function () {
+    console.debug("_link", this.href);
+    let rel = $(this).attr("rel");
+    rel =
+      "noopener noreferrer" +
+      (rel && !rel.match("noopener noreferrer") ? " " + rel : "");
+    console.debug("rel", rel);
+    $(this).attr({ target: "_blank", rel: rel });
+  });
+
+  /**
+   * For single README.md in docs/
+   *
    * Test by boolean
    * const _sidebar = $("div.sidebar > div.toctree > ul").children().length > 0 || false
    * console.debug("Sidebar", _sidebar)
@@ -315,12 +327,12 @@ $(function () {
       `<li class='toc level-${level_} tag-${this.nodeName.toLowerCase()}' data-sort='${(
         index + 1
       ).toString()}' data-level='${level_}'><a class='d-flex flex-items-baseline' href='#${$(
-        this
+        this,
       )
         .text()
         .toLowerCase()
         .replace(/ /g, "-")
-        .replace(/[^\w-]+/g, "")}'>${_sanitizeText}</a></li>`
+        .replace(/[^\w-]+/g, "")}'>${_sanitizeText}</a></li>`,
     );
     $(this).attr(
       "id",
@@ -328,7 +340,7 @@ $(function () {
         .text()
         .toLowerCase()
         .replace(/ /g, "-")
-        .replace(/[^\w-]+/g, "")
+        .replace(/[^\w-]+/g, ""),
     );
     $(".toctree ul li:first-child a").parent().addClass("current");
   });

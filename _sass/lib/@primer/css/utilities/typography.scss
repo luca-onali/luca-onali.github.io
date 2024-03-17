@@ -307,7 +307,9 @@
 // Text Shadows
 /* Add a dark text shadow */
 .text-shadow-dark {
-  text-shadow: 0 1px 1px rgba($black, 0.25), 0 1px 25px rgba($black, 0.75);
+  text-shadow:
+    0 1px 1px rgba($black, 0.25),
+    0 1px 25px rgba($black, 0.75);
 }
 /* Add a light text shadow */
 .text-shadow-light {

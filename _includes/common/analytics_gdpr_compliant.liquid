@@ -22,11 +22,7 @@
 
 
 {%- if site.telemetry.app_id -%}
-<script src="https://unpkg.com/@telemetrydeck/sdk/dist/telemetrydeck.min.js" defer></script>
-<script>
-  window.td = window.td || [];
-  td.push(['app', '{{ site.telemetry.app_id }}'], ['user', 'anonymous'], ['signal']);
-</script>
+<script src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js" data-app-id="{{ site.telemetry.app_id }}" ></script>
 {%- endif -%}
 
 

@@ -16,7 +16,7 @@
     "prefix": [
       // "bash",
       // "#!",
-      "shebang"
+      "shebang",
     ],
     "body": [
       "#!/usr/bin/env bash",
@@ -28,9 +28,9 @@
       "# copyright     : Copyright (c) 2019-2023 JV-conseil",
       "#                 All rights reserved",
       "#====================================================",
-      ""
+      "",
     ],
-    "description": "Shebang Bash executor"
+    "description": "Shebang Bash executor",
   },
   "function": {
     "prefix": ["_jvcl_::", "function"],
@@ -39,7 +39,7 @@
       "\tlocal _bool=true",
       "\tif cmd; then _bool=false; fi",
       "\techo \"\\${_bool\\}\"",
-      "}"
+      "}",
     ],
     "description": [
       "This defines a generic function _jvcl_::generic_function() {}.\n",
@@ -47,17 +47,17 @@
       "If the function reserved word is supplied, the parentheses are optional.\n",
       "1. Recommended way:\n",
       "name() {}\n",
-      "2. C-like-way:\nfunction name [()] {}"
-    ]
+      "2. C-like-way:\nfunction name [()] {}",
+    ],
   },
   "array_loop": {
     "prefix": ["for_array"],
     "body": [
       "for _item in \"${MY_ARRAY[@]}\"; do",
       "\techo \"${_item}\"",
-      "done"
+      "done",
     ],
-    "description": ["Loop through an array"]
+    "description": ["Loop through an array"],
   },
   "cat": {
     "prefix": ["cat"],
@@ -68,9 +68,9 @@
       " TITLE ",
       "===================",
       "",
-      "EOF"
+      "EOF",
     ],
-    "description": ["Concatenate FILE(s) to standard output"]
+    "description": ["Concatenate FILE(s) to standard output"],
   },
   "case": {
     "prefix": ["case"],
@@ -89,7 +89,7 @@
       "\techo -n \"Catch All\"",
       "\t;;",
       "",
-      "esac"
+      "esac",
     ],
     "description": [
       "The bash case statement is generally used",
@@ -98,7 +98,7 @@
       "Using the case statement instead of",
       "nested if statements will help you",
       "make your bash scripts more readable",
-      "and easier to maintain."
-    ]
-  }
+      "and easier to maintain.",
+    ],
+  },
 }

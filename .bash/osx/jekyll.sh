@@ -31,7 +31,10 @@ _jvcl_::jekyll_serve() {
 }
 
 _jvcl_::github_pages() {
-  bundle exec github-pages health-check || :
+  (
+    . "${HOME}/.env/jekyll/.env"
+    bundle exec github-pages health-check
+  ) || printf "\nERROR: bundle exec github-pages health-check failed\n"
 }
 
 # shellcheck disable=SC2317

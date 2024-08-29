@@ -53,3 +53,6 @@ group :development do
   # gem 'jekyll-sass-converter', github: 'jekyll/jekyll-sass-converter'
   # gem 'sass-embedded'
 end
+
+# csv was loaded from the standard library, but will no longer be part of the default gems since Ruby 3.4.0. Add csv to your Gemfile or gemspec. Also contact author of jekyll-3.9.5 to add csv into its gemspec.
+gem "csv", "~> 3.3"

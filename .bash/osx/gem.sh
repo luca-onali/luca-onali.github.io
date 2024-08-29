@@ -22,6 +22,7 @@ _jvcl_::gem_update() {
     gem info "${_gem}" || gem install "${_gem}"
     gem update "${_gem}" || :
   done
+  gem update --system
 }
 
 _jvcl_::bundle_update() {

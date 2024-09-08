@@ -3,7 +3,7 @@
 #
 # author        : JV-conseil
 # credits       : JV-conseil
-# copyright     : Copyright (c) 2019-2023 JV-conseil
+# copyright     : Copyright (c) 2019-2024 JV-conseil
 #                 All rights reserved
 #
 # bundle add github-pages jekyll-avatar jekyll-mentions --group "jekyll_plugins"
@@ -20,15 +20,16 @@ _jvcl_::gem_update() {
   for _gem in "${_gems[@]}"; do
     _jvcl_::h1 "Checking if ${_gem} is installed..."
     gem info "${_gem}" || gem install "${_gem}"
-    gem update "${_gem}" || :
+    gem update "${_gem}" || printf "Oops command failed: bundle %s --verbose" "${_gem}"
   done
+  gem update --system || printf "Oops command failed: gem update --system"
 }
 
 _jvcl_::bundle_update() {
   local _opt
-  rm -vrf "./Gemfile.lock" || :
+  rm -vrf "./Gemfile.lock" || printf "Oops command failed: rm -vrf ./Gemfile.lock"
   for _opt in "check" "doctor" "install" "update" "lock"; do
-    bundle "${_opt}" --verbose || :
+    bundle "${_opt}" --verbose || printf "Oops command failed: bundle %s --verbose" "${_opt}"
   done
 }
 

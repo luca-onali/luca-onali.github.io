@@ -77,7 +77,7 @@ jobs:
           # Configuration file
           # See <https://github.com/github/codeql-action#configuration-file>
           # Copyright (c) 2019-2024 JV-conseil, All rights reserved
-          config-file: ./.github/codeql/codeql-config.yml
+          # config-file: ./.github/codeql/codeql-config.yml
 
       # If the analyze step fails for one of the languages you are analyzing with
       # "We were unable to automatically build your code", modify the matrix above

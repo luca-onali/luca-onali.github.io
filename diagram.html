@@ -60,7 +60,19 @@
             Portfolio "1" --> "*" Projet : contient
             Portfolio "1" --> "1" CV : contient
     </div>
-
+    <div class="mermaid">
+    <h1>Diagramme de séquence</h1>
+            sequenceDiagram
+                participant Utilisateur
+                participant ServeurGitHub
+                participant ServeurWebJekyll
+                
+                Utilisateur ->>ServeurWebJekyll: Demande page
+                ServeurWebJekyll ->>ServeurGitHub: Récupère projets
+                ServeurGitHub->>ServeurWebJekyll: Envoie projets
+                ServeurWebJekyll->>Utilisateur: Affiche projets
+    </div>
+    
     <div class="button-container">
         <a href="README.md" class="readme-button" target="_blank">Voir README</a>
     </div>

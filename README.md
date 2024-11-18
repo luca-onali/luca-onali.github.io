@@ -6,7 +6,7 @@ Ce document détaille les étapes nécessaires à la réalisation de mon portfol
 
 ## **Jour 1 18/11/2024 (3h45)**  
 
-## **1. Modélisation du projet en UML (30 min)**  
+### **1. Modélisation du projet en UML (30 min)**  
 - Identifier les différentes pages et sections du portfolio.  
 - Modéliser leur relation (diagramme de classes ou de composants).  
 

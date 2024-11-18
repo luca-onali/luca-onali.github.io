@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramme de classes</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
 <body>
+    <h1>Diagramme de classes</h1>
+    <div class="mermaid">
+        classDiagram
+            class Portfolio {
+                +String titre
+                +String description
+                +String theme
+            }
 
+            class Page {
+                +String nom
+                +String contenu
+            }
 
-classDiagram
-    class Portfolio
-    Portfolio : +String titre
-    Portfolio : +String description
-    Portfolio : +String description
-    Portfolio : +deposit(amount)
-    Portfolio : +withdrawal(amount)
+            class Projet {
+                +String nom
+                +String description
+                +String url
+            }
 
+            class CV {
+                +String fichier
+            }
 
-  </body>
+            Portfolio "1" --> "*" Page : contient
+            Portfolio "1" --> "*" Projet : contient
+            Portfolio "1" --> "1" CV : contient
+           
+    </div>
+</body>
 </html>

@@ -1,20 +1,18 @@
-# luca-onali.github.io
+git clone https://github.com/luca-onali/luca-onali.github.io
 
 # Planification du Portfolio
 
-Ce document détaille les étapes nécessaires à la réalisation du portfolio en utilisant GitHub Pages et Jekyll, réparties sur **17 heures**.
+Ce document détaille les étapes nécessaires à la réalisation de mon portfolio sur GitHub.
 
 ---
 
-## **1. Modélisation du projet en UML (45 min)**  
+## **Jour 1 18/11/2024 (3h45)**  
+
+## **1. Modélisation du projet en UML (30 min)**  
 - Identifier les différentes pages et sections du portfolio.  
 - Modéliser leur relation (diagramme de classes ou de composants).  
 
----
-
-## **Jour 1 (1h30)**  
-
-### **2. Créer le dépôt GitHub pour le portfolio (30 min)**  
+### **2. Créer le dépôt GitHub pour le portfolio (15 min)**  
 - Configurer le dépôt :  
   - Nom.  
   - Description.  
@@ -24,27 +22,29 @@ Ce document détaille les étapes nécessaires à la réalisation du portfolio e
 - Activer GitHub Pages dans les paramètres.  
 - Vérifier que la configuration fonctionne (page par défaut visible).  
 
----
-
-## **Jour 2 (3h45)**  
-
 ### **4. Choisir et installer un thème Jekyll (2h)**  
 - Rechercher des thèmes adaptés.  
 - Installer le thème sur le dépôt.  
-- Tester l’intégration du thème.  
+- Tester l’intégration du thème.
 
-### **5. Créer les pages principales du portfolio (1h45)**  
+### **5. Créer les pages principales du portfolio (15min)**  
 - Ajouter les pages :  
   - *Accueil*.  
   - *Projets*.  
   - *À propos*.  
   - *Contact*.  
-- Utiliser des fichiers Markdown pour structurer les contenus.  
 
 ---
 
-## **Jour 3 (6h)**  
+## **Jour 3 25/11/2024 (6h)** 
 
+### **5. Créer les pages principales du portfolio (1h30)**  
+- Utiliser des fichiers Markdown pour structurer les contenus des pages :  
+  - *Accueil*.  
+  - *Projets*.  
+  - *À propos*.  
+  - *Contact*.  
+  
 ### **6. Rédiger le contenu pour les pages (3h)**  
 - Rédiger les textes pour chaque page :  
   - Présentation personnelle.  
@@ -58,15 +58,15 @@ Ce document détaille les étapes nécessaires à la réalisation du portfolio e
   - Mise en page.  
 - Tester les changements pour assurer une bonne compatibilité.  
 
+---
+
+## **Jour 4 04/12/2024 (4h30)**
+
 ### **8. Ajouter des projets et des images (1h30)**  
 - Préparer :  
   - Les descriptions des projets.  
   - Les captures d’écran associées.  
 - Intégrer les éléments dans la page dédiée.  
-
----
-
-## **Jour 4 (3h)**  
 
 ### **9. Tester le site localement (2h)**  
 - Installer Ruby et Jekyll localement (si ce n’est pas déjà fait).  
@@ -78,7 +78,7 @@ Ce document détaille les étapes nécessaires à la réalisation du portfolio e
 
 ---
 
-## **Jour 5 (2h)**  
+## **Jour 5 09/12/2024 (2h)**  
 
 ### **11. Vérification finale et ajustements (2h)**  
 - Parcourir le site pour détecter d’éventuelles erreurs ou incohérences.  

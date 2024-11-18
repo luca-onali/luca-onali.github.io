@@ -4,13 +4,13 @@ Ce document détaille les étapes nécessaires à la réalisation de mon portfol
 
 ---
 
-## **Jour 1 18/11/2024 (3h45)**  
+## **Jour 1 18/11/2024 (4h)**  
 
 ### **1. Modélisation du projet en UML (30 min)**  
 - Identifier les différentes pages et sections du portfolio.  
 - Modéliser leur relation (diagramme de classes ou de composants).  
 
-### **2. Créer le dépôt GitHub pour le portfolio (15 min)**  
+### **2. Créer le dépôt GitHub pour le portfolio (30 min)**  
 - Configurer le dépôt :  
   - Nom.  
   - Description.  

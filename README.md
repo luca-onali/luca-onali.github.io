@@ -1,5 +1,3 @@
-git clone https://github.com/luca-onali/luca-onali.github.io
-
 # Planification du Portfolio
 
 Ce document détaille les étapes nécessaires à la réalisation de mon portfolio sur GitHub.

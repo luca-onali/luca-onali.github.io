@@ -8,6 +8,28 @@
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
+    <style>
+        /* Style pour le bouton */
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .readme-button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .readme-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>Diagramme de classes</h1>
@@ -37,7 +59,11 @@
             Portfolio "1" --> "*" Page : contient
             Portfolio "1" --> "*" Projet : contient
             Portfolio "1" --> "1" CV : contient
-           
     </div>
+
+    <div class="button-container">
+        <a href="README.md" class="readme-button" target="_blank">Voir README</a>
+    </div>
+    
 </body>
 </html>

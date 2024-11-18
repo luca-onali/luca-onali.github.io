@@ -16,11 +16,12 @@ Ce document détaille les étapes nécessaires à la réalisation de mon portfol
   - Description.  
   - Fichiers nécessaires (README, `.gitignore`).  
 
-### **3. Configurer GitHub Pages (1h)**  
+### **3. Configurer GitHub Pages (1h30)**  
+- Installer Ruby
 - Activer GitHub Pages dans les paramètres.  
 - Vérifier que la configuration fonctionne (page par défaut visible).  
 
-### **4. Choisir et installer un thème Jekyll (2h)**  
+### **4. Choisir et installer un thème Jekyll (1h30)**  
 - Rechercher des thèmes adaptés.  
 - Installer le thème sur le dépôt.  
 - Tester l’intégration du thème.

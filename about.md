@@ -58,37 +58,39 @@ Développement d’un modèle prédictif à partir de données de logement pour 
 ## 📊 Compétences
 
 ### Programmation
-| **Compétence** | **Description** |
-|----------------|-----------------|
-| Python         | Développement d'applications et scripts de traitement de données |
-| R              | Analyse statistique et création de modèles prédictifs |
-| HTML, CSS, JS  | Développement de sites web et d’interfaces utilisateur |
-| PHP            | Développement backend pour applications web |
-| SQL            | Manipulation et gestion de bases de données relationnelles |
+| **Compétence**    | **Description** |
+|-------------------|-----------------|
+| Python            | Développement d'applications et scripts de traitement de données |
+| R                 | Analyse statistique et création de modèles prédictifs |
+| HTML, CSS, JS     | Développement de sites web et d’interfaces utilisateur |
+| PHP               | Développement backend pour applications web |
+| SQL               | Manipulation et gestion de bases de données relationnelles |
 
 ### Bases de Données (BDD)
-| **Compétence** | **Description** |
-|----------------|-----------------|
-| PostgreSQL (PgSQL) | Gestion de bases de données relationnelles |
-| MongoDB        | Base de données NoSQL pour des applications volumineuses |
-| Neo4J          | Gestion de bases de données graphiques |
+| **Compétence**    | **Description** |
+|-------------------|-----------------|
+| PostgreSQL (PgSQL)| Gestion de bases de données relationnelles |
+| MongoDB           | Base de données NoSQL pour des applications volumineuses |
+| Neo4J             | Gestion de bases de données graphiques |
 
 ### Visualisation
-| **Compétence** | **Description** |
-|----------------|-----------------|
-| PowerBI        | Création de rapports et dashboards interactifs |
-| Tableau        | Outil de visualisation de données avancée |
-| Canva          | Conception graphique pour la création de visuels |
+| **Compétence**    | **Description** |
+|-------------------|-----------------|
+| PowerBI           | Création de rapports et dashboards interactifs |
+| Tableau           | Outil de visualisation de données avancée |
+| Canva             | Conception graphique pour la création de visuels |
 
 ### SIG (Systèmes d'Information Géographique)
-| **Compétence** | **Description** |
-|----------------|-----------------|
-| FME            | Automatisation des flux de données SIG |
-| ArcGIS         | Analyse spatiale et gestion des données géographiques |
-| QGIS           | Plateforme open-source pour SIG |
-| PostGIS        | Extension de PostgreSQL pour les données géospatiales |
-| ArcMap         | Outil SIG d'ESRI pour l’analyse spatiale |
-| Leaflet        | Bibliothèque JavaScript pour la visualisation de cartes |
+| **Compétence**    | **Description** |
+|-------------------|-----------------|
+| FME               | Automatisation des flux de données SIG |
+| ArcGIS            | Analyse spatiale et gestion des données géographiques |
+| QGIS              | Plateforme open-source pour SIG |
+| PostGIS           | Extension de PostgreSQL pour les données géospatiales |
+| ArcMap            | Outil SIG d'ESRI pour l’analyse spatiale |
+| Leaflet           | Bibliothèque JavaScript pour la visualisation de cartes |
+
+---
 
 © 2024 **ONALI Lùca** - Tous droits réservés.  
 

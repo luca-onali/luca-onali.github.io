@@ -1,9 +1,4 @@
-<head>
-<script type="module" src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs"></script>
-<script>
-    mermaid.initialize({ startOnLoad: true });
-</script>
-</head>
+
 ---
 layout: default
 title: "Accueil - Mon Portfolio"

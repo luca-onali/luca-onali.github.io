@@ -10,7 +10,7 @@ title: "Contact - Mon Portfolio"
 Vous souhaitez collaborer, poser une question, ou simplement échanger ? N’hésitez pas à me contacter !
 
 ### 📧 E-mail  
-Envoyez-moi un e-mail à [onali3333@gmail.com](mailto:onali3333@gmail.com), et je vous répondrai dans les plus brefs délais.
+Envoyez-moi un e-mail à [Mon mail](mailto:luca.onali@etudiant.univ-perp.fr), et je vous répondrai dans les plus brefs délais.
 
 ---
 

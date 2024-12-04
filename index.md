@@ -5,7 +5,7 @@ title: "Accueil - Mon Portfolio"
 
 # Bienvenue sur mon Portfolio
 
-Bienvenue dans mon portfolio ! Retrouvez ici mes projets, mon parcours et mes informations de contact.
+Bienvenue dans mon portfolio ! Je m'appelle **Lùca ONALI**, retrouvez ici mes projets, mon parcours et mes informations de contact.
 
 ---
 

@@ -43,7 +43,7 @@ classDiagram
     Portfolio "1" --> "*" Page : contient
     Portfolio "1" --> "*" Projet : contient
     Portfolio "1" --> "1" CV : contient
-
+```
 ## Diagramme de séquence
 
 ```mermaid
@@ -56,3 +56,4 @@ sequenceDiagram
     ServeurWebJekyll->>ServeurGitHub: Récupère projets
     ServeurGitHub->>ServeurWebJekyll: Envoie projets
     ServeurWebJekyll->>Utilisateur: Affiche projets
+```

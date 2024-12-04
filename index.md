@@ -44,6 +44,8 @@ classDiagram
     Portfolio "1" --> "*" Projet : contient
     Portfolio "1" --> "1" CV : contient
 
+## Diagramme de séquence
+
 ```mermaid
 sequenceDiagram
     participant Utilisateur

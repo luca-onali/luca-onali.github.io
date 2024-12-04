@@ -58,6 +58,7 @@ Développement d’un modèle prédictif à partir de données de logement pour 
 ## 📊 Compétences
 
 ### Programmation
+```mermaid
 | **Compétence**    | **Description** |
 |-------------------|-----------------|
 | Python            | Développement d'applications et scripts de traitement de données |
@@ -65,6 +66,7 @@ Développement d’un modèle prédictif à partir de données de logement pour 
 | HTML, CSS, JS     | Développement de sites web et d’interfaces utilisateur |
 | PHP               | Développement backend pour applications web |
 | SQL               | Manipulation et gestion de bases de données relationnelles |
+```
 
 ### Bases de Données (BDD)
 | **Compétence**    | **Description** |

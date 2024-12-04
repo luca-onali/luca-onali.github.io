@@ -7,7 +7,7 @@ title: "Contact - Mon Portfolio"
 
 ## Restons en contact
 
-Vous souhaitez collaborer ou simplement poser une question ? Remplissez le formulaire ci-dessous ou envoyez-moi un e-mail directement à [onali3333@gmail.com](mailto:onali3333@gmail.com).
+Vous souhaitez collaborer ou simplement poser une question ? Envoyez-moi un e-mail directement à [onali3333@gmail.com](mailto:onali3333@gmail.com).
 
 
 ---

@@ -17,7 +17,7 @@ Bienvenue dans mon portfolio ! Retrouvez ici mes projets, mon parcours et mes in
 
 ## Diagramme de classe
 
-```{mermaid}
+```mermaid
 classDiagram
     class Portfolio {
         +String titre
@@ -44,7 +44,7 @@ classDiagram
     Portfolio "1" --> "*" Projet : contient
     Portfolio "1" --> "1" CV : contient
 
-```{mermaid}
+```mermaid
 sequenceDiagram
     participant Utilisateur
     participant ServeurGitHub

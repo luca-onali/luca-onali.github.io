@@ -18,7 +18,7 @@ Bienvenue dans mon portfolio ! Retrouvez ici mes projets, mon parcours et mes in
 
 ## Diagramme de classe
 
-```mermaid
+
 classDiagram
     class Portfolio {
         +String titre
